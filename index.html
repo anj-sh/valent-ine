@@ -1,125 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="val_anj.css" />
-    <script src="./val_anj.js" defer></script>
-    <link rel="icon" type="image/x-icon" href="./img/love-letter.png">
-    <title>for my Valent</title>
-  </head>
-  <body>
-    <div class="title_text">
-      <h1 class="animated-title">Happy birthday, <span class="heart2">my loVe</span>! &#128158</h1>
-    </div>
-    <div class="carousel-wrapper">
-      <div class="carousel" data-carousel>
-      <button class="cb prev" data-carousel-button="prev">&#8592;</button>
-      <button class="cb next" data-carousel-button="next">&#8594;</button>
-      <section aria-label="photoes">
-        <ul data-slides>
-          <li class="slide" data-active>
-            <img src="./img/1.JPG">
-          </li>
-          <li class="slide">
-            <img src="./img/2.JPG">
-          </li>
-          <li class="slide">
-            <img src="./img/3.png">
-          </li>
-          <li class="slide">
-            <img src="./img/4.png">
-          </li>
-          <li class="slide">
-            <img src="./img/5.png">
-          </li>
-          <li class="slide">
-            <img src="./img/6.png">
-          </li>
-          <li class="slide">
-            <img src="./img/7.png">
-          </li>
-          <li class="slide">
-            <img src="./img/8.png">
-          </li>
-          <li class="slide">
-            <img src="./img/9.png">
-          </li>
-          <li class="slide">
-            <img src="./img/10.png">
-          </li>
-        </ul>
-      </section>
-    </div>
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="./img/party-hat.png">
+  <title>happy birthday, V!</title>
+  <style>
+    body {
+      background-color: #ffe4ec;
+      font-family: 'Marck Script', cursive;
+      text-align: center;
+      padding-top: 100px;
+    }
+    #greeting {
+      display: none;
+      margin-top: 30px;
+    }
+
+    p {
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      padding-right: 25%;
+      padding-left: 25%;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      border-radius: 8px;
+      border: none;
+      background-color: #ff6699;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #ff3366;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Ви Валентин Гут і у вас сьогодні день народження?</h1>
+  <button onclick="showGreeting()">Так 🎉</button>
+
+  <div id="greeting">
+    <h2>Вітаю! 🥳</h2>
+    <p>Ваша кохана дружина зробила вам сайт-сюрприз на ванільному Javascript. Це важливе уточнення, адже якби вона знала React чи Angular, виглядало б це ще краще)) 
+      <br>Але вона старалась &#128150
+      <br>Тицяй на кнопку 👇</p>
+    <a href="val_anj.html">
+      <button> 🎁 </button>
+    </a>
   </div>
-    <div class="timerr">
-      <h2>I'm happy to be with you for:</h2>
-      <div class="timer" id="timer">
-        <div class="block">
-          <div class="label">years</div>
-          <div class="value" id="years">00</div>
-        </div>
-        <div class="block">
-          <div class="label">months</div>
-          <div class="value" id="months">00</div>
-        </div>
-        <div class="block">
-          <div class="label">days</div>
-          <div class="value" id="days">00</div>
-        </div>
-        <div class="block">
-          <div class="label">hours</div>
-          <div class="value" id="hours">00</div>
-        </div>
-        <div class="block">
-          <div class="label">minutes</div>
-          <div class="value" id="minutes">00</div>
-        </div>
-        <div class="block">
-          <div class="label">seconds</div>
-          <div class="value" id="seconds">00</div>
-        </div>
-      </div>
-      <div class="counter" id="timeTogether">
-        <script src="timer.js"></script>
-      </div>
-    </div>
-    <div class="envelope" style="background-color: #fce4ec;">
-        <div class="container">
-            <label>
-            <div class="heart">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Love_Heart_SVG.svg"></img>
-            </div>
-            <input id="messageState" type="checkbox" style="display:none"/>
-            </label>
-            <div class="message">
-                <h2>HB Valik,</h2>
-                <p> 
-                    <span>
-                        &emsp; I've been keeping this in for a while, but I think Valentine's Day is the perfect time to say it—you’re the reason my days feel brighter. Every little moment with you means more than I can put into words. Your smile, your laughter, the way you make everything feel lighter—it all makes my heart race in the best way possible.
-                    </span>
-                    <br> <br>
-                    <span>
-                        &emsp;  So, here it is… I like you, a lot. Maybe even love. Would you be my Valentine? No matter your answer, I just wanted you to know how special you are to me. You’ve filled my heart with warmth in ways I never expected, and for that, I’m grateful. But if you say yes, I promise to make every day feel like Valentine’s Day for you—to cherish you, to make you smile, and to remind you just how much you mean to me.
-                    </span>      
-                </p>
-                <br>
-                <div class="sincere">
-                    <p style="font-weight: bold;"> With Love,</p>
-                    <p>Anji</p>
-                 </div>
-            </div>
-        </div>
-        
-        <script src="jquery.js"></script>
-        <script src="jquery2.1.js"></script>
-        <script defer src="valentine-confession.js"></script>
-    </div>
-    <div class="last">
-      <p>I love you! &nbsp &nbsp &nbsp &nbsp &nbsp I love you! &nbsp &nbsp &nbsp &nbsp &nbsp I love you! &nbsp &nbsp &nbsp &nbsp &nbsp I love you! &nbsp &nbsp &nbsp &nbsp &nbsp I love you! &nbsp &nbsp &nbsp &nbsp &nbsp I love you! &nbsp &nbsp &nbsp &nbsp &nbsp I love you! &nbsp &nbsp &nbsp &nbsp &nbsp I love you! &nbsp &nbsp &nbsp &nbsp &nbsp I love you! &nbsp &nbsp &nbsp &nbsp &nbsp I love you! &nbsp &nbsp &nbsp &nbsp &nbsp I love you! &nbsp &nbsp &nbsp &nbsp &nbsp I love you! &nbsp &nbsp &nbsp &nbsp &nbsp I love you!</p>
-    </div>
-  </body>
+
+  <script>
+    function showGreeting() {
+      document.getElementById("greeting").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
