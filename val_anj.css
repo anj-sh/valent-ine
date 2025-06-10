@@ -15,8 +15,6 @@
   background-color: #fce4ec;
 }
 
-/* background-color: #f48fb1; */
-
 .animated-title {
   font-family: 'Pacifico', cursive;
   font-size: 2.5rem;
@@ -32,18 +30,15 @@
   text-shadow: 1px 1px 2px #ffb3c6;
 }
 
-/* @keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-5px);
-  }
-} */
+@media (min-width: 350px) and (max-width: 600px) {
+	.animated-title{ 
+		font-size: 1.7rem;
+	}
+}
 
 .carousel-wrapper {
-  background-color: #ffe6ef; /* світло-рожевий */
-  padding: 0; /* верх і низ, щоб додати простору */
+  background-color: #ffe6ef;
+  padding: 0;
 }
 
 .carousel {
@@ -56,6 +51,27 @@
   position: relative;
   background-color: #fce4ec;
   margin: 0 auto;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+	.carousel{ 
+	width: 750px;
+	height: 530px;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+	.carousel{ 
+	width: 600px;
+  	height: 430px;
+	}
+}
+
+@media (min-width: 350px) and (max-width: 600px) {
+	.carousel{ 
+	width: 350px;
+	height: 250px;
+	}
 }
 
 .carousel > ul {
@@ -114,7 +130,6 @@
   right: 1rem;
 }
 
-
 .timerr {
   color: brown;
   display: flex;
@@ -156,12 +171,35 @@
   min-width: 80px;
 }
 
-@media (max-width: 500px) {
-  .value {
-    font-size: 1.5rem;
-    padding: 15px 10px;
-    min-width: 60px;
-  }
+@media (min-width: 600px) and (max-width: 730px) {
+	.timerr > h2{ 
+		font-size: 1.5rem;
+	}
+
+	.value {
+		font-size: 1rem;
+		padding: 15px 10px;
+		min-width: 60px;
+	}
+
+	.timer {
+		justify-content: center;
+	}
+}
+
+@media (min-width: 350px) and (max-width: 600px) {
+	.timerr > h2{ 
+		font-size: 1.2rem;
+	}
+
+	.value {
+		font-size: 1rem;
+		padding: 15px 10px;
+	}
+
+	.timer {
+		justify-content: center;
+	}
 }
 
 .envelope {
@@ -250,8 +288,12 @@
 }
 
 .message .sincere p{
-  
 	margin: 0;
+}
+
+.letters {
+	font-family: "Comfortaa", sans-serif;
+	font-size: 15px;
 }
 
 @keyframes beat {

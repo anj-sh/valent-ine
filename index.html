@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="./img/party-hat.png">
   <title>happy birthday, V!</title>
@@ -10,11 +11,26 @@
       background-color: #ffe4ec;
       font-family: 'Marck Script', cursive;
       text-align: center;
-      padding-top: 100px;
+      padding-top: 80px;
     }
+
     #greeting {
       display: none;
       margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding-top: 40px;
+      }
+      
+      h1 {
+        font-size: 35px;
+      }
+
+      h2 {
+      font-size: 30px;
+      }
     }
 
     p {
@@ -26,7 +42,7 @@
     button {
       padding: 10px 20px;
       font-size: 18px;
-      border-radius: 8px;
+      border-radius: 10px;
       border: none;
       background-color: #ff6699;
       color: white;
@@ -35,6 +51,21 @@
     button:hover {
       background-color: #ff3366;
     }
+
+    @media (max-width: 768px) {
+      p {
+      padding-right: 5%;
+      padding-left: 5%;
+      }
+
+      button {
+        padding: 15px 25px;
+      }
+    }
+
+    /* @media (min-width: 375px) and (max-width: 768px) {
+      
+    } */
   </style>
 </head>
 <body>
